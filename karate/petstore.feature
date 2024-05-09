@@ -21,10 +21,20 @@ Feature: Petstore API
         Then status 200
 
 
-    Scenario: Find pets by status
+    Scenario: Find pets by status and print data
         * def printPets = read('./utils/printPets.js')
         Given path '/pet/findByStatus'
         And param status = 'sold'
         And method get
         When status 200
         Then printPets(response)
+
+    Scenario: Get pets by status and count by name
+        * def printPets = read('./utils/printPets.js')
+        * def petCounter = read('./utils/counterPets.js')
+        Given path '/pet/findByStatus'
+        And param status = 'sold'
+        And method get
+        When status 200
+        * def petCount = petCounter(response)
+        Then print(JSON.stringify(petCount))

@@ -1,5 +1,8 @@
 printPets = pets => {
-    var petResponse = []
-    for(pet in pets){petResponse.push({"id": pet.id, "name": pet.name })}
-    console.log(petResponse)
+    const petResponse = [];
+    for(let i = 0; i < pets.length; i++){
+        const pet = pets[i];
+        petResponse.push({ "id": pet.id, "name": pet.name });
+    }
+    console.log(petResponse);
 }
