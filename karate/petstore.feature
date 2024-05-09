@@ -21,7 +21,7 @@ Feature: Petstore API
         Given path `/user/${username}`
         And method get
         When status 200
-        Then match response.id == id
+        Then match response == data
 
 
     Scenario: Find pets by status and print data
