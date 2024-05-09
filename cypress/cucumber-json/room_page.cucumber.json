@@ -1,0 +1,253 @@
+[
+  {
+    "description": "We must let users choose a room and a modality for their bookings",
+    "keyword": "Feature",
+    "name": "choose room and modality for a booking",
+    "line": 1,
+    "id": "choose-room-and-modality-for-a-booking",
+    "tags": [],
+    "uri": "room_page.feature",
+    "elements": [
+      {
+        "id": "choose-room-and-modality-for-a-booking;the-user-uses-filters-to-choose-a-room-and-a-modality,-and-continues",
+        "keyword": "Scenario",
+        "line": 19,
+        "name": "The user uses filters to choose a room and a modality, and continues",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "an user on the room selection page with at least one result",
+            "result": {
+              "status": "passed",
+              "duration": 5773000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 9,
+            "name": "an user that sets Melia Rewards in \"true\"",
+            "result": {
+              "status": "passed",
+              "duration": 18000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "configures a sort by \"lowest price\"",
+            "result": {
+              "status": "passed",
+              "duration": 1177000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "chooses a currency: \"USD\"",
+            "result": {
+              "status": "passed",
+              "duration": 2594000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "selects a room modality",
+            "result": {
+              "status": "passed",
+              "duration": 382000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "user continues to tariff",
+            "result": {
+              "status": "passed",
+              "duration": 461000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "the user is redirected to tariff page",
+            "result": {
+              "status": "passed",
+              "duration": 993000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "choose-room-and-modality-for-a-booking;the-user-uses-filters-to-choose-a-room-and-a-modality,-and-continues",
+        "keyword": "Scenario",
+        "line": 20,
+        "name": "The user uses filters to choose a room and a modality, and continues",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "an user on the room selection page with at least one result",
+            "result": {
+              "status": "passed",
+              "duration": 6117000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 9,
+            "name": "an user that sets Melia Rewards in \"false\"",
+            "result": {
+              "status": "passed",
+              "duration": 669000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "configures a sort by \"highest price\"",
+            "result": {
+              "status": "passed",
+              "duration": 1796000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "chooses a currency: \"EUR\"",
+            "result": {
+              "status": "passed",
+              "duration": 2089000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "selects a room modality",
+            "result": {
+              "status": "passed",
+              "duration": 309000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "user continues to tariff",
+            "result": {
+              "status": "passed",
+              "duration": 501000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "the user is redirected to tariff page",
+            "result": {
+              "status": "passed",
+              "duration": 544000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "choose-room-and-modality-for-a-booking;the-user-uses-filters-to-choose-a-room-and-a-modality,-and-continues",
+        "keyword": "Scenario",
+        "line": 21,
+        "name": "The user uses filters to choose a room and a modality, and continues",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "an user on the room selection page with at least one result",
+            "result": {
+              "status": "passed",
+              "duration": 6060000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 9,
+            "name": "an user that sets Melia Rewards in \"true\"",
+            "result": {
+              "status": "passed",
+              "duration": 17000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "configures a sort by \"lowest price\"",
+            "result": {
+              "status": "passed",
+              "duration": 1118000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "chooses a currency: \"GBP\"",
+            "result": {
+              "status": "passed",
+              "duration": 1602000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "selects a room modality",
+            "result": {
+              "status": "passed",
+              "duration": 322000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "user continues to tariff",
+            "result": {
+              "status": "passed",
+              "duration": 651000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "the user is redirected to tariff page",
+            "result": {
+              "status": "passed",
+              "duration": 728000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

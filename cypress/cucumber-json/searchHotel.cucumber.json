@@ -1,0 +1,173 @@
+[
+  {
+    "description": "    As a user I want to search for hotels by location, dates and number of people to find available acommodation options",
+    "keyword": "Feature",
+    "name": "Hotel search",
+    "line": 1,
+    "id": "hotel-search",
+    "tags": [],
+    "uri": "searchHotel.feature",
+    "elements": [
+      {
+        "id": "hotel-search;successful-search-with-valid-criteria",
+        "keyword": "Scenario",
+        "line": 8,
+        "name": "Successful search with valid criteria",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "user visit hotel page",
+            "result": {
+              "status": "passed",
+              "duration": 3738000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "user enter valid search criteria",
+            "result": {
+              "status": "passed",
+              "duration": 1850000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "a list of hotels is shown",
+            "result": {
+              "status": "passed",
+              "duration": 11084000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "hotel-search;search-failed-due-to-not-entering-search-criteria",
+        "keyword": "Scenario",
+        "line": 12,
+        "name": "Search failed due to not entering search criteria",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "user visit hotel page",
+            "result": {
+              "status": "passed",
+              "duration": 3055000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "user does not enter search criteria",
+            "result": {
+              "status": "passed",
+              "duration": 270000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "error message is displayed",
+            "result": {
+              "status": "passed",
+              "duration": 36000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "hotel-search;failed-search-for-invalid-city",
+        "keyword": "Scenario",
+        "line": 16,
+        "name": "Failed search for invalid city",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "user visit hotel page",
+            "result": {
+              "status": "passed",
+              "duration": 3419000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 17,
+            "name": "user enter invalid city",
+            "result": {
+              "status": "passed",
+              "duration": 1343000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 18,
+            "name": "second error message is displayed",
+            "result": {
+              "status": "passed",
+              "duration": 54000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "hotel-search;failed-search-due-to-not-entering-date",
+        "keyword": "Scenario",
+        "line": 20,
+        "name": "Failed search due to not entering date",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "user visit hotel page",
+            "result": {
+              "status": "passed",
+              "duration": 2770000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 21,
+            "name": "user enter whitout date",
+            "result": {
+              "status": "passed",
+              "duration": 1851000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 22,
+            "name": "third error message is displayed",
+            "result": {
+              "status": "passed",
+              "duration": 60000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

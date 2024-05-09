@@ -1,0 +1,294 @@
+[
+  {
+    "description": "    A page where the user fill the required inputs to book a room on the wesite.",
+    "keyword": "Feature",
+    "name": "User Data Fill Page",
+    "line": 1,
+    "id": "user-data-fill-page",
+    "tags": [],
+    "uri": "userdate_page.feature",
+    "elements": [
+      {
+        "id": "user-data-fill-page;successfull-inputs-with-valid-data",
+        "keyword": "Scenario",
+        "line": 17,
+        "name": "Successfull inputs with valid data",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "A user who is on the hotel booking page",
+            "result": {
+              "status": "failed",
+              "duration": 753000000,
+              "error_message": "ReferenceError: commonPage is not defined\n    at UserDataPage.searchAndBookHotel (cypress/pages/userdata_page.js:46:25)\n    at Context.eval (cypress/support/step_definitions/userdata_page.js:7:13)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)\nFrom previous event:\n    at Promise.longStackTracesCaptureStackTrace [as _captureStackTrace] (https://www.melia.com/__cypress/runner/cypress_runner.js:3486:19)\n    at Promise._then (https://www.melia.com/__cypress/runner/cypress_runner.js:1239:17)\n    at Promise._passThrough (https://www.melia.com/__cypress/runner/cypress_runner.js:4110:17)\n    at Promise.lastly.Promise.finally (https://www.melia.com/__cypress/runner/cypress_runner.js:4119:17)\n    at Object.onRunnableRun (https://www.melia.com/__cypress/runner/cypress_runner.js:163183:53)\n    at $Cypress.action (https://www.melia.com/__cypress/runner/cypress_runner.js:41042:28)\n    at Runnable.run (https://www.melia.com/__cypress/runner/cypress_runner.js:145771:13)\n    at next (https://www.melia.com/__cypress/runner/cypress_runner.js:155556:10)\n    at <unknown> (https://www.melia.com/__cypress/runner/cypress_runner.js:155600:5)\n    at timeslice (https://www.melia.com/__cypress/runner/cypress_runner.js:146111:27)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 10,
+            "name": "the user entered valid data with \"jorge@gmail.com\" as mail, \"ESPAÑA\" as nacionality , \"Jorge\" as name, \"Fernández\" as surname, \"Gonzalez\" as 2o surname, \"34239787E\" as NIF, \"15000\" as ZipCode, \"633448944\" as Telf. Number, \"LA CORUÑA\" as province",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "the user checked the reward checkbox",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "the user checked the privacy policy checkbox",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "the user clicks on the access button",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "is redirected to the payment page",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "user-data-fill-page;invalid-data-entered-by-the-user",
+        "keyword": "Scenario",
+        "line": 26,
+        "name": "Invalid data entered by the user",
+        "tags": [
+          {
+            "name": "@focus",
+            "line": 19
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "A user who is on the hotel booking page",
+            "result": {
+              "status": "failed",
+              "error_message": "ReferenceError: commonPage is not defined\n    at UserDataPage.searchAndBookHotel (cypress/pages/userdata_page.js:46:25)\n    at Context.eval (cypress/support/step_definitions/userdata_page.js:7:13)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)\nFrom previous event:\n    at Promise.longStackTracesCaptureStackTrace [as _captureStackTrace] (https://www.melia.com/__cypress/runner/cypress_runner.js:3486:19)\n    at Promise._then (https://www.melia.com/__cypress/runner/cypress_runner.js:1239:17)\n    at Promise._passThrough (https://www.melia.com/__cypress/runner/cypress_runner.js:4110:17)\n    at Promise.lastly.Promise.finally (https://www.melia.com/__cypress/runner/cypress_runner.js:4119:17)\n    at Object.onRunnableRun (https://www.melia.com/__cypress/runner/cypress_runner.js:163183:53)\n    at $Cypress.action (https://www.melia.com/__cypress/runner/cypress_runner.js:41042:28)\n    at Runnable.run (https://www.melia.com/__cypress/runner/cypress_runner.js:145771:13)\n    at next (https://www.melia.com/__cypress/runner/cypress_runner.js:155556:10)\n    at <unknown> (https://www.melia.com/__cypress/runner/cypress_runner.js:155600:5)\n    at timeslice (https://www.melia.com/__cypress/runner/cypress_runner.js:146111:27)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 21,
+            "name": "the user entered invalid data with \"jorgegmailcom\" as mail, \"ESPAÑA\" as nacionality , \"Jorge\" as name, \"Fernández\" as surname, \"Gonzalez\" as 2o surname, \"4920478E\" as NIF, \"15001\" as ZipCode, \"644556985\" as Telf. Number, \"LA CORUÑA\" as province",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 22,
+            "name": "invalid inputs fields show a error: \"El formato del correo electrónico no es válido.\"",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "user-data-fill-page;invalid-data-entered-by-the-user",
+        "keyword": "Scenario",
+        "line": 27,
+        "name": "Invalid data entered by the user",
+        "tags": [
+          {
+            "name": "@focus",
+            "line": 19
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "A user who is on the hotel booking page",
+            "result": {
+              "status": "failed",
+              "error_message": "ReferenceError: commonPage is not defined\n    at UserDataPage.searchAndBookHotel (cypress/pages/userdata_page.js:46:25)\n    at Context.eval (cypress/support/step_definitions/userdata_page.js:7:13)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)\nFrom previous event:\n    at Promise.longStackTracesCaptureStackTrace [as _captureStackTrace] (https://www.melia.com/__cypress/runner/cypress_runner.js:3486:19)\n    at Promise._then (https://www.melia.com/__cypress/runner/cypress_runner.js:1239:17)\n    at Promise._passThrough (https://www.melia.com/__cypress/runner/cypress_runner.js:4110:17)\n    at Promise.lastly.Promise.finally (https://www.melia.com/__cypress/runner/cypress_runner.js:4119:17)\n    at Object.onRunnableRun (https://www.melia.com/__cypress/runner/cypress_runner.js:163183:53)\n    at $Cypress.action (https://www.melia.com/__cypress/runner/cypress_runner.js:41042:28)\n    at Runnable.run (https://www.melia.com/__cypress/runner/cypress_runner.js:145771:13)\n    at next (https://www.melia.com/__cypress/runner/cypress_runner.js:155556:10)\n    at <unknown> (https://www.melia.com/__cypress/runner/cypress_runner.js:155600:5)\n    at timeslice (https://www.melia.com/__cypress/runner/cypress_runner.js:146111:27)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 21,
+            "name": "the user entered invalid data with \"jorge@gmail.com\" as mail, \"ESPAÑA\" as nacionality , \"Jorge\" as name, \"Fernández\" as surname, \"Gonzalez\" as 2o surname, \"4920478E\" as NIF, \"15001\" as ZipCode, \"A4568776452\" as Telf. Number, \"LA CORUÑA\" as province",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 22,
+            "name": "invalid inputs fields show a error: \"Número de teléfono incorrecto\"",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "user-data-fill-page;invalid-data-entered-by-the-user",
+        "keyword": "Scenario",
+        "line": 28,
+        "name": "Invalid data entered by the user",
+        "tags": [
+          {
+            "name": "@focus",
+            "line": 19
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "A user who is on the hotel booking page",
+            "result": {
+              "status": "failed",
+              "error_message": "ReferenceError: commonPage is not defined\n    at UserDataPage.searchAndBookHotel (cypress/pages/userdata_page.js:46:25)\n    at Context.eval (cypress/support/step_definitions/userdata_page.js:7:13)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)\nFrom previous event:\n    at Promise.longStackTracesCaptureStackTrace [as _captureStackTrace] (https://www.melia.com/__cypress/runner/cypress_runner.js:3486:19)\n    at Promise._then (https://www.melia.com/__cypress/runner/cypress_runner.js:1239:17)\n    at Promise._passThrough (https://www.melia.com/__cypress/runner/cypress_runner.js:4110:17)\n    at Promise.lastly.Promise.finally (https://www.melia.com/__cypress/runner/cypress_runner.js:4119:17)\n    at Object.onRunnableRun (https://www.melia.com/__cypress/runner/cypress_runner.js:163183:53)\n    at $Cypress.action (https://www.melia.com/__cypress/runner/cypress_runner.js:41042:28)\n    at Runnable.run (https://www.melia.com/__cypress/runner/cypress_runner.js:145771:13)\n    at next (https://www.melia.com/__cypress/runner/cypress_runner.js:155556:10)\n    at <unknown> (https://www.melia.com/__cypress/runner/cypress_runner.js:155600:5)\n    at timeslice (https://www.melia.com/__cypress/runner/cypress_runner.js:146111:27)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 21,
+            "name": "the user entered invalid data with \"jorge@gmail.com\" as mail, \"ESPAÑA\" as nacionality , \"Jorge\" as name, \"Fernández\" as surname, \"Gonzalez\" as 2o surname, \"3423978232A7E\" as NIF, \"15001\" as ZipCode, \"644556985\" as Telf. Number, \"LA CORUÑA\" as province",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 22,
+            "name": "invalid inputs fields show a error: \"El formato del documento de identidad no es válido.\"",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "user-data-fill-page;invalid-data-entered-by-the-user",
+        "keyword": "Scenario",
+        "line": 29,
+        "name": "Invalid data entered by the user",
+        "tags": [
+          {
+            "name": "@focus",
+            "line": 19
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "A user who is on the hotel booking page",
+            "result": {
+              "status": "failed",
+              "error_message": "ReferenceError: commonPage is not defined\n    at UserDataPage.searchAndBookHotel (cypress/pages/userdata_page.js:46:25)\n    at Context.eval (cypress/support/step_definitions/userdata_page.js:7:13)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)\nFrom previous event:\n    at Promise.longStackTracesCaptureStackTrace [as _captureStackTrace] (https://www.melia.com/__cypress/runner/cypress_runner.js:3486:19)\n    at Promise._then (https://www.melia.com/__cypress/runner/cypress_runner.js:1239:17)\n    at Promise._passThrough (https://www.melia.com/__cypress/runner/cypress_runner.js:4110:17)\n    at Promise.lastly.Promise.finally (https://www.melia.com/__cypress/runner/cypress_runner.js:4119:17)\n    at Object.onRunnableRun (https://www.melia.com/__cypress/runner/cypress_runner.js:163183:53)\n    at $Cypress.action (https://www.melia.com/__cypress/runner/cypress_runner.js:41042:28)\n    at Runnable.run (https://www.melia.com/__cypress/runner/cypress_runner.js:145771:13)\n    at next (https://www.melia.com/__cypress/runner/cypress_runner.js:155556:10)\n    at <unknown> (https://www.melia.com/__cypress/runner/cypress_runner.js:155600:5)\n    at timeslice (https://www.melia.com/__cypress/runner/cypress_runner.js:146111:27)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 21,
+            "name": "the user entered invalid data with \"empty\" as mail, \"ESPAÑA\" as nacionality , \"Jorge\" as name, \"Fernández\" as surname, \"Gonzalez\" as 2o surname, \"3423978232A7E\" as NIF, \"empty\" as ZipCode, \"empty\" as Telf. Number, \"LA CORUÑA\" as province",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 22,
+            "name": "invalid inputs fields show a error: \"Campo requerido\"",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "user-data-fill-page;invalid-data-entered-by-the-user",
+        "keyword": "Scenario",
+        "line": 30,
+        "name": "Invalid data entered by the user",
+        "tags": [
+          {
+            "name": "@focus",
+            "line": 19
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "A user who is on the hotel booking page",
+            "result": {
+              "status": "failed",
+              "error_message": "ReferenceError: commonPage is not defined\n    at UserDataPage.searchAndBookHotel (cypress/pages/userdata_page.js:46:25)\n    at Context.eval (cypress/support/step_definitions/userdata_page.js:7:13)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)\nFrom previous event:\n    at Promise.longStackTracesCaptureStackTrace [as _captureStackTrace] (https://www.melia.com/__cypress/runner/cypress_runner.js:3486:19)\n    at Promise._then (https://www.melia.com/__cypress/runner/cypress_runner.js:1239:17)\n    at Promise._passThrough (https://www.melia.com/__cypress/runner/cypress_runner.js:4110:17)\n    at Promise.lastly.Promise.finally (https://www.melia.com/__cypress/runner/cypress_runner.js:4119:17)\n    at Object.onRunnableRun (https://www.melia.com/__cypress/runner/cypress_runner.js:163183:53)\n    at $Cypress.action (https://www.melia.com/__cypress/runner/cypress_runner.js:41042:28)\n    at Runnable.run (https://www.melia.com/__cypress/runner/cypress_runner.js:145771:13)\n    at next (https://www.melia.com/__cypress/runner/cypress_runner.js:155556:10)\n    at <unknown> (https://www.melia.com/__cypress/runner/cypress_runner.js:155600:5)\n    at timeslice (https://www.melia.com/__cypress/runner/cypress_runner.js:146111:27)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 21,
+            "name": "the user entered invalid data with \"jorge@gmailcom\" as mail, \"ESPAÑA\" as nacionality , \"Jorge\" as name, \"Fernández\" as surname, \"Gonzalez\" as 2o surname, \"4920478E\" as NIF, \"ABCSDE\" as ZipCode, \"644556985\" as Telf. Number, \"LA CORUÑA\" as province",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 22,
+            "name": "invalid inputs fields show a error: \"El formato del código postal no es válido.\"",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

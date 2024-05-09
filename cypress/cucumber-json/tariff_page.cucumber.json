@@ -1,0 +1,117 @@
+[
+  {
+    "description": "We must let users select an available tariff",
+    "keyword": "Feature",
+    "name": "tariff selection",
+    "line": 1,
+    "id": "tariff-selection",
+    "tags": [],
+    "uri": "tariff_page.feature",
+    "elements": [
+      {
+        "id": "tariff-selection;the-tariff-selection-is-completed",
+        "keyword": "Scenario",
+        "line": 8,
+        "name": "the tariff selection is completed",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "an user who has selected a room and modality",
+            "result": {
+              "status": "passed",
+              "duration": 1298000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 9,
+            "name": "an user on the tariff page",
+            "result": {
+              "status": "undefined",
+              "duration": 23000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "the user selects a tariff",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 11,
+            "name": "the user continues",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "the user is redirected to user data page",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "tariff-selection;the-tariff-selection-isn't-completed-because-user-returns-to-room-page",
+        "keyword": "Scenario",
+        "line": 15,
+        "name": "the tariff selection isn't completed because user returns to room page",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "an user who has selected a room and modality",
+            "result": {
+              "status": "passed",
+              "duration": 1169000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 16,
+            "name": "an user on the tariff page",
+            "result": {
+              "status": "undefined"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 17,
+            "name": "user decides to return",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 18,
+            "name": "the user is redirected to room page",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,78 @@
+[
+  {
+    "description": "    This automate test checks the first automatization on the wikipedia.",
+    "keyword": "Feature",
+    "name": "\"Automatization\" Wikipedia Search",
+    "line": 1,
+    "id": "\"automatization\"-wikipedia-search",
+    "tags": [],
+    "uri": "wikipedia_page.feature",
+    "elements": [
+      {
+        "id": "\"automatization\"-wikipedia-search;successfully-automatizated",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "Successfully automatizated",
+        "tags": [
+          {
+            "name": "@focus",
+            "line": 8
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "A user is on Google home page",
+            "result": {
+              "status": "passed",
+              "duration": 2070000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 11,
+            "name": "the user entered search \"automatizacion\"",
+            "result": {
+              "status": "passed",
+              "duration": 1076000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "the user see the search results",
+            "result": {
+              "status": "passed",
+              "duration": 382000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "the user clicks on the Wikipedia link",
+            "result": {
+              "status": "passed",
+              "duration": 1652000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "on the Wikipedia page the user search \"primer proceso\" and makes a screenshot",
+            "result": {
+              "status": "passed",
+              "duration": 1776000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
