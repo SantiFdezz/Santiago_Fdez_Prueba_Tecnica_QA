@@ -16,9 +16,12 @@ Feature: Petstore API
     Scenario: Retrieve a user by username
         * def data = read('./data/newUser.json')
         * def username = data.username
-        And path `/user/${username}`
-        When method get
-        Then status 200
+        * def id = data.id
+        * print(id)
+        Given path `/user/${username}`
+        And method get
+        When status 200
+        Then match response.id == id
 
 
     Scenario: Find pets by status and print data
@@ -27,7 +30,8 @@ Feature: Petstore API
         And param status = 'sold'
         And method get
         When status 200
-        Then printPets(response)
+        * def petsList = printPets(response)
+        Then print(JSON.stringify(petsList))
 
     Scenario: Get pets by status and count by name
         * def printPets = read('./utils/printPets.js')

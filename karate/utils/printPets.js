@@ -4,5 +4,5 @@ printPets = pets => {
         const pet = pets[i];
         petResponse.push({ "id": pet.id, "name": pet.name });
     }
-    console.log(petResponse);
+    return (petResponse);
 }

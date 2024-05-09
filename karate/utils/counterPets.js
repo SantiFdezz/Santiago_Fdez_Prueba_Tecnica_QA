@@ -13,5 +13,4 @@ counterPets = petList => {
     return {
         petCount
     };
-    
 }
