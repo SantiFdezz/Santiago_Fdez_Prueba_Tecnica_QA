@@ -28,7 +28,7 @@
             "name": "A user is on Google home page",
             "result": {
               "status": "passed",
-              "duration": 1105000000
+              "duration": 3447000000
             }
           },
           {
@@ -38,7 +38,7 @@
             "name": "the user entered search \"automatizacion\"",
             "result": {
               "status": "passed",
-              "duration": 966000000
+              "duration": 971000000
             }
           },
           {
@@ -48,7 +48,7 @@
             "name": "the user see the search results",
             "result": {
               "status": "passed",
-              "duration": 567000000
+              "duration": 443000000
             }
           },
           {
@@ -58,7 +58,7 @@
             "name": "the user clicks on the Wikipedia link",
             "result": {
               "status": "passed",
-              "duration": 1616000000
+              "duration": 1638000000
             }
           },
           {
@@ -68,7 +68,7 @@
             "name": "on the Wikipedia page the user search \"primer proceso\" and makes a screenshot",
             "result": {
               "status": "passed",
-              "duration": 1748000000
+              "duration": 2170000000
             }
           }
         ]

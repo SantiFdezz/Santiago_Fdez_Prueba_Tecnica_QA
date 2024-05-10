@@ -20,6 +20,7 @@ Given('the user see the search results', () => {
 When('the user clicks on the Wikipedia link', () => {
     Common.clickOn(constants.WIKI_RESULT(constants.LINK_NAME), true)
     Common.checkRedirection(constants.WIKI_URL);
+
 });
 
 Then('on the Wikipedia page the user search "primer proceso" and makes a screenshot', () => {
