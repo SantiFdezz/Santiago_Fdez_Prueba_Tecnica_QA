@@ -1,7 +1,5 @@
 Feature: Petstore API
     
-
-#crear class user
     Background:
         * url baseUrl
         
@@ -16,8 +14,6 @@ Feature: Petstore API
     Scenario: Retrieve a user by username
         * def data = read('./data/newUser.json')
         * def username = data.username
-        * def id = data.id
-        * print(id)
         Given path `/user/${username}`
         And method get
         When status 200
